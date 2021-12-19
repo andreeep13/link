@@ -17,6 +17,8 @@
     
     <!-- App CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/lightbox.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/lightbox-2.css">
 
 </head> 
 
@@ -432,9 +434,13 @@
 					    <div class="app-card app-card-doc shadow-sm  h-100">
 						    <div class="app-card-thumb-holder p-3">
 							    <div class="app-card-thumb">
-	                                <img class="thumb-image" src="assets/images/doc-thumb-1.jpg" alt="">
+	                                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
+      								<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
+      								<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
+      								<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+
 	                            </div>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
+	                             
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
@@ -1014,7 +1020,7 @@
 		    </div>
 	    </footer><!--//app-footer-->
 	    
-    </div><!--//app-wrapper-->    					
+    </div><!--//app-wrapper-->    
 
  
     <!-- Javascript -->          
@@ -1023,6 +1029,7 @@
 
     
     <!-- Page Specific JS -->
+	<script src="assets/js/lightbox.js"></script>
     <script src="assets/js/app.js"></script> 
 
 </body>
