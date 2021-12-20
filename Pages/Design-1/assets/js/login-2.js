@@ -21,11 +21,11 @@ var firebaseConfig = {
     // check if user is logged in or not
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-            if(window.location.pathname != '/./Design Bca Mobile  - Blog Andre.rar'){
-                window.location = './Design Bca Mobile  - Blog Andre.rar';
+            if(window.location.pathname != '/Download/'){
+                window.location = 'Download/';
             }
         } else {
-            if(window.location.pathname === '/./Design Bca Mobile  - Blog Andre.rar'){
+            if(window.location.pathname === '/Download/'){
                 window.location = 'index.html';
             }
         }
@@ -40,7 +40,7 @@ var firebaseConfig = {
         
             firebase.auth().signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
-                window.location = './Design Bca Mobile  - Blog Andre.rar';
+                window.location = 'Download/';
             })
             .catch((error) => {
                 message.style.display = 'block';
@@ -61,7 +61,7 @@ var firebaseConfig = {
         
             firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
-                window.location = './Design Bca Mobile  - Blog Andre.rar';
+                window.location = 'Download/';
             })
             .catch((error) => {
                 message.style.display = 'block';
@@ -101,7 +101,7 @@ var firebaseConfig = {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // console.log(user);
-        window.location = './Design Bca Mobile  - Blog Andre.rar';
+        window.location = 'Download/';
       }
     });
     
@@ -109,7 +109,7 @@ var firebaseConfig = {
       firebase.auth()
         .signInWithPopup(provider)
         .then((result) => {
-          window.location = './Design Bca Mobile  - Blog Andre.rar'
+          window.location = 'Download/'
         }).catch((error) => {
           console.log(error);
         });
