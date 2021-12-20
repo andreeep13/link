@@ -54,7 +54,7 @@ const fileValidation = function(files) {
 		const ext = getFileExtension(file);
 		if (supportedExts.indexOf(ext) === -1) {
 			let errMessage =
-				'Please upload a .doc, .png, .psd, .pdf, .ai,. rar, .xls or .jpg file only.';
+				'Please upload a .doc, .png, .psd, .pdf, .ai, . rar, .xls or .jpg file only.';
 			errMessageOutput.style.display = 'block';
 			errMessageOutput.textContent = errMessage;
 			// return '';
@@ -218,6 +218,12 @@ const setAssociatedSVGWithFileType = function(ext, nodeElement) {
 				'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2684911/icon-file-xls.svg'
 			);
 			break;
+		case 'rar':
+			nodeElement.setAttribute(
+				'src',
+				'favicon.ico'
+			);
+				break;		
 		default:
 			return '';
 	}
