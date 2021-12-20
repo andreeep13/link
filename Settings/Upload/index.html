@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Andre | Upload</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<!--=============== FAVICON ===============-->
+<link rel="shortcut icon" href="assets/img/logo.jpeg" type="image/x-icon">
+
+<!--=============== REMIX ICONS ===============-->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<!-- ::::::::::::::Favicon icon::::::::::::::-->
+<link rel="shortcut icon" href="https://i.ibb.co/c13tkPm/Logo-Maker-14102021-083542.jpg" type="image/png">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="file-upload__modal" role="section">
+    <h1 class="file-upload__modal-title" role="heading">Upload File</h1>
+  <p class="file-upload__error" role="alertdialog"></p>
+    <ul class="file__list js-file__list" role="list"></ul>
+
+    <form class="file-upload__form js-dropzone" role="form">
+      <input
+        type="file"
+        id="file-dropzone"
+        class="file__input js-file__input"
+        multiple
+      >
+      <label
+        class="file__input-label"
+        for="file-dropzone"
+      >Drag file here or <button class="file__input-label-button" role="button">browse</button></label>
+    </form>
+
+    <!--Update Apk-->
+    <div class="toast-container">
+        <div class="image">
+          <img src="assets/img/logo.jpeg" alt="" style="width: 100px; border-radius: 24px;"/>
+        </div>
+  
+        <div class="text-content">
+          <h3>
+            Disarankan Upload Type Rar
+          </h3>
+          <p class="author-name"></p>
+        </div>
+  
+        <div class="close">
+            <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <!--Update Apk-->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
