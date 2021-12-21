@@ -1,46 +1,55 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Blog Andre | Report</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1 class="brand"><span>Blog</span> Andre</h1>
-    <div class="wrapper">
-      <div class="company-info">
-        <h3>Report</h3>
+  <div class="wrapper">
+    <header>Send Report</header>
+    <form id="contactForm">
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="email" name="email" id="email" placeholder="Enter your email">
+          <i class='fas fa-envelope'></i>
+        </div>
       </div>
-      <div class="contact">
-        <h3></h3>
-        <div class="alert">Your report has been sent</div>
-        <form id="contactForm">
-          <p>
-            <label>Name</label>
-            <input type="text" name="name" id="name" required>
-          </p>
-          <p>
-            <label>Email Address</label>
-            <input type="email" name="email" id="email" required>
-          </p>
-          <p class="full">
-            <label>Message</label>
-            <textarea name="message" rows="5" id="message"></textarea>
-          </p>
-          <p class="full">
-            <button type="submit">Submit</button>
-          </p>
-        </form>
+      <!--Ngakapakai--
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="phone" placeholder="Enter your phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="website" placeholder="Enter your website">
+          <i class='fas fa-globe'></i>
+        </div>
       </div>
-    </div>
+      <!--Ngakapakai-->
+      <div class="message">
+        <textarea placeholder="Write your message" name="message" id="message"></textarea>
+        <i class="material-icons">message</i>
+      </div>
+      <div class="button-area">
+        <button type="submit">Send Message</button>
+        <span></span>
+      </div>
+    </form>
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-  <script src="main.js"></script>
+  <script src="script.js"></script>
+  <script src="firebase.js"></script>
+
+
 </body>
 </html>
